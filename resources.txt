@@ -1,0 +1,12 @@
+Descending Order of Study
+
+https://courses.edx.org/courses/course-v1:W3Cx+HTML5.1x+1T2017/courseware/b246c15d3a1044ccb4564ea22fbc4821/ef075a883df1447698d557fe6f6222d0/?child=first
+    
+    - https://www.w3.org/TR/html5/grouping-content.html#the-main-element
+
+https://courses.edx.org/courses/course-v1:W3Cx+HTML5.1x+1T2017/courseware/b246c15d3a1044ccb4564ea22fbc4821/804b2e29c27e47f880b2f9558da428f0/?child=first
+
+
+https://www.w3.org/TR/WCAG20-TECHS/H91.html
+
+https://d37djvu3ytnwxt.cloudfront.net/assets/courseware/v1/f39e20d342b3d409fb08b6b27ca2472f/asset-v1:W3Cx+HTML5.1x+1T2017+type@asset+block/pictureOfStructuringElements.jpg
