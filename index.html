@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arimo|PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>HTML5 Best Practices</title>
+    <title>Web Design Studio</title>
 </head>
 
 <body>
@@ -25,21 +25,21 @@
             </h1>
             <ul class="social-icons">
                 <li class="facebook">
-<a href="https://www.facebook.com/zenyhoj" target="_blank">
+                    <a href="https://www.facebook.com/zenyhoj" target="_blank">
                         <i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li class="twitter">
-<a href="#">
-    <i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
-                    
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+
                 </li>
                 <li class="linkedIn">
-<a href="#">
-    <i class="fa fa-linkedin" aria-hidden="true"></i>
-</a>
-                    
+                    <a href="#">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+
                 </li>
                 <li class="gplus">
                     <a href="#">
@@ -52,7 +52,7 @@
         <!-- main-nav -->
         <nav role="navigation">
             <ul class="main-nav">
-                <li class="active">
+                <li class="home">
                     <a href="#home">Home</a>
                 </li>
                 <li>
@@ -63,6 +63,10 @@
                 </li>
                 <li>
                     <a href="#services">Services</a>
+                </li>
+
+                <li class="msg-me">
+                    <a href="#msg-me">Ask for Quotation</a>
                 </li>
             </ul>
         </nav>
@@ -76,12 +80,8 @@
             <article id="main-content">
 
                 <section id="home">
-<img src="assets/images/hero-img.jpeg" alt="an image of a web developer">
-                    <header>
-                       
-                        <h1>Sample Home Heading</h1>
-                    </header>
-
+                    <img src="assets/images/hero-img.jpeg" alt="an image of a web developer">
+                    <h1>Sample Home Heading</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet animi laboriosam sed officiis nisi voluptates
                         a repellendus possimus odit magnam, totam impedit voluptate esse ea. Minima impedit fuga necessitatibus
                         est? Vel reiciendis tenetur quia blanditiis porro necessitatibus magni doloribus libero ab, fuga
@@ -151,6 +151,60 @@
 
                 </section>
 
+
+                <section id="msg-me">
+
+                    <h1>Contact our team for your upcoming project</h1>
+
+                    <div class="container">
+                        <!-- <h1 class="form-brand">
+                            <span>Acme</span> Web Design</h1> -->
+                        <div class="form-wrapper">
+                            <div class="company-info">
+                                <!-- <h3>Contact Us</h3> -->
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-road"></i> Rizal, Ave., Brgy. 3, Buenavista, Agusan del Norte</li>
+                                    <li>
+                                        <i class="fa fa-phone"></i> (085) 343-4037</li>
+                                    <li>
+                                        <i class="fa fa-envelope"></i> joebalingit0515@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="contact">
+                                <h3>Message Us</h3>
+                                <div class="alert">Your message has been sent</div>
+                                <form id="contactForm">
+                                    <p>
+                                        <label>Name</label>
+                                        <input type="text" name="name" id="name" required>
+                                    </p>
+                                    <p>
+                                        <label>Company</label>
+                                        <input type="text" name="company" id="company">
+                                    </p>
+                                    <p>
+                                        <label>Email Address</label>
+                                        <input type="email" name="email" id="email" required>
+                                    </p>
+                                    <p>
+                                        <label>Phone Number</label>
+                                        <input type="text" name="phone" id="phone">
+                                    </p>
+                                    <p class="full">
+                                        <label>Message</label>
+                                        <textarea name="message" rows="5" id="message"></textarea>
+                                    </p>
+                                    <p class="full">
+                                        <button type="submit">Submit</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
             </article>
 
 
@@ -165,6 +219,9 @@
         </footer>
 
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
