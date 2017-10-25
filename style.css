@@ -32,7 +32,7 @@ main {
 
 footer {
     grid-area: footer;
-    background: #01774c;
+    background: rgba(10, 180, 100, .85);
     font-family: sans-serif;
     text-align: center;
     color: #fff;
@@ -104,14 +104,14 @@ p {
     line-height: 1.5;
 }
 
-
-nav{
+nav {
     padding: 0 !important;
 }
 
-nav > ul{
+nav>ul {
     margin-top: 0;
 }
+
 .main-nav {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -133,12 +133,10 @@ nav > ul{
     text-transform: uppercase;
 }
 
-.main-nav .msg-me{
+.main-nav .msg-me {
     font-weight: bold;
     text-transform: uppercase;
 }
-
-
 
 .main-nav>li {
     text-align: center;
@@ -178,13 +176,13 @@ nav > ul{
 
 
 /* main area */
-#home{
+
+#home {
     background: rgba(10, 180, 100, .65);
     color: #fff;
-    
 }
 
-section#home > h1{
+section#home>h1 {
     padding-top: 20px;
 }
 
@@ -202,6 +200,7 @@ section h1 {
     font-size: 1.7em;
 }
 
+
 /* main {
     display: grid;
     grid-template-columns: 100%;
@@ -209,23 +208,29 @@ section h1 {
     grid-template-areas: "main-nav" "main-content"
 } */
 
-#main-content h1, p {
+#main-content h1,
+p {
     padding: 0 30px 10px;
     font-family: 'Arimo', sans-serif;
 }
 
 #main-content p {
-margin-top: 0;
-
+    margin-top: 0;
 }
 
-#msg-me h1{
+#msg-me{
+    background: rgba(237,237,237, .85);
+    padding: 30px 0;
+}
+
+#msg-me h1 {
     text-align: center;
 }
 
+
 /* contact form styles */
 
-  {
+{
     box-sizing: border-box;
 }
 
@@ -235,16 +240,15 @@ body {
     line-height: 1.6;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     padding: 1em;
-} 
+}
 
- .container {
+.container {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-     font-family: 'Arimo',
-     sans-serif;
-     color: #fff;
+    font-family: 'Arimo', sans-serif;
+    color: #fff;
 }
 
 ul {
@@ -264,12 +268,12 @@ ul {
     box-shadow: 0 0 10px 0 rgba(72, 94, 116, 0.7);
 }
 
-.form-wrapper > * {
+.form-wrapper>* {
     padding: 1em;
 }
 
 .company-info {
-    background: #2FBF7C;
+    background: rgba(10, 180, 100, .75);
 }
 
 .company-info h3,
@@ -280,46 +284,109 @@ ul {
 
 .contact {
     background: #f9feff;
+}
+
+.contact h3 {
+    color: #485e74;
+    /* padding-left: 30px; */
+    font-size: 2em;
+    margin: 0 0 20px 0;
+}
+
+/* portfolio styles */
+
+.portfolio-wrapper{
+
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-gap: 10px;
+    margin: 0 50px;
     
 }
 
-.contact h3{
-     color: #485e74;
-     /* padding-left: 30px; */
-     font-size: 2em;
-     margin: 0 0 20px 0;
+#portfolio{
+     background: #EDEDED;
+    /* margin-bottom: 20px; */
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.portfolio-wrapper .project {
+    border: 1px solid #47C78B;
+    border-radius: 2%;
+    /* position: relative; */
+    overflow: hidden;
+     background: rgba(10, 180, 100, .75);
 }
 
-#contactForm{
-         /* font-family: 'Slabo 27px', 
+.project p{
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.project a{
+    text-decoration: none;
+    color: #fff;
+    /* padding-left: 10px; */
+}
+
+
+
+.project a:hover{
+    color: #48639F;
+}
+
+.portfolio-wrapper .project > img{
+    width: 350px;
+    margin-bottom: 12px;
+    
+}
+.portfolio-wrapper .project.buenawater{
+    background: rgba(10, 180, 100, .75);
+}
+
+/* end of portfolio styles */
+
+
+
+/* testimonial styles */
+
+#testimonials{
+    background: rgba(10, 180, 100, .25);
+    padding: 30px;
+}
+
+#testimonials p{
+    padding-bottom: 0;
+}
+
+#testimonials .client-name{
+    font-size: .8em;
+}
+
+/* end of testimonial styles */
+
+#contactForm {
+    /* font-family: 'Slabo 27px', 
          /* serif; */
-         color: #485e74;
+    color: #485e74;
 }
 
-#contactForm > p:nth-of-type(2n+1){
+#contactForm>p:nth-of-type(2n+1) {
     padding-left: 0;
 }
 
 .company-info * {
-   
     text-align: center;
 }
 
-p.full{
+p.full {
     padding-left: 0;
-
 }
-
-
-
-
-
-
 
 
 /* FORM STYLES */
 
-.container{
+.container {
     max-width: 90%;
 }
 
@@ -331,7 +398,6 @@ p.full{
 
 .contact form label {
     display: block;
-   
 }
 
 .contact form p {
@@ -356,7 +422,6 @@ p.full{
     text-transform: uppercase;
     color: #fff;
     width: 30%;
-    
 }
 
 .contact form button:hover,
@@ -368,9 +433,8 @@ p.full{
     transition: background-color 2s ease-out;
 }
 
-.full button{
-    font-family: 'Arimo',
-    sans-serif;
+.full button {
+    font-family: 'Arimo', sans-serif;
     font-weight: bold;
 }
 
@@ -385,6 +449,8 @@ p.full{
 
 
 /* LARGE SCREENS */
+
+
 /*
 @media(min-width:700px) {
     .wrapper {
@@ -400,4 +466,14 @@ p.full{
         text-align: left;
     }
 }
-/* end of contact-form styles */ 
+/* end of contact-form styles */
+
+/* footer styles */
+footer p{
+    font-family: 'Shadows Into Light',
+    cursive;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    padding: 0;
+}   
+/* end of footer styles */
