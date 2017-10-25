@@ -1,0 +1,403 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "brand" "nav" "main" "footer";
+    max-width: 960px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.brand {
+    grid-area: brand;
+}
+
+h1#big-heading {
+    font-size: 3em;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.heading-cursive {
+    margin-left: -13px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background: #01774c;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* top header as grid */
+
+.brand {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 2fr));
+}
+
+.social-icons {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(6, auto);
+    text-align: center;
+}
+
+.social-icons>li {
+    /* margin: 0 auto; */
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2em;
+}
+
+.social-icons>li>a {
+    color: rgba(10, 180, 100, .85);
+    padding: 10px;
+}
+
+.facebook>a:hover {
+    color: #3b5998;
+    font-size: 1.5em;
+}
+
+.twitter>a:hover {
+    color: #00b6f1;
+    font-size: 1.5em;
+}
+
+.linkedIn>a:hover {
+    color: #007bb6;
+    font-size: 1.5em;
+}
+
+.gplus>a:hover {
+    color: #df4a32;
+    font-size: 1.5em;
+}
+
+h1 {
+    margin: 0;
+}
+
+h1 .heading-bold {
+    font-family: 'Anton', sans-serif;
+    color: #302F35;
+}
+
+h1 .heading-cursive {
+    font-family: 'Lobster', cursive;
+    color: rgba(10, 180, 100, .85)
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    line-height: 1.5;
+}
+
+
+nav{
+    padding: 0 !important;
+}
+
+nav > ul{
+    margin-top: 0;
+}
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background: #2FBF7C;
+    padding: 20px;
+    grid-area: main-nav;
+    margin-bottom: 0;
+    /* -webkit-border-top-left-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+    -moz-border-radius-topleft: 25px;
+    -moz-border-radius-bottomright: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
+}
+
+.main-nav {
+    list-style: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.main-nav .msg-me{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.main-nav>li {
+    text-align: center;
+}
+
+.main-nav>li>a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center
+}
+
+.main-nav>li>a:hover {
+    color: #88e8c5;
+}
+
+.main-nav>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #88e8c5;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.main-nav>li>a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+
+/* main area */
+#home{
+    background: rgba(10, 180, 100, .65);
+    color: #fff;
+    
+}
+
+section#home > h1{
+    padding-top: 20px;
+}
+
+section#home p {
+    padding-bottom: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section h1 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.7em;
+}
+
+/* main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "main-nav" "main-content"
+} */
+
+#main-content h1, p {
+    padding: 0 30px 10px;
+    font-family: 'Arimo', sans-serif;
+}
+
+#main-content p {
+margin-top: 0;
+
+}
+
+#msg-me h1{
+    text-align: center;
+}
+
+/* contact form styles */
+
+  {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #485e74;
+    line-height: 1.6;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding: 1em;
+} 
+
+ .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+     font-family: 'Arimo',
+     sans-serif;
+     color: #fff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.form-brand {
+    text-align: center;
+}
+
+.form-brand span {
+    color: #485e74;
+}
+
+.form-wrapper {
+    box-shadow: 0 0 10px 0 rgba(72, 94, 116, 0.7);
+}
+
+.form-wrapper > * {
+    padding: 1em;
+}
+
+.company-info {
+    background: #2FBF7C;
+}
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact {
+    background: #f9feff;
+    
+}
+
+.contact h3{
+     color: #485e74;
+     /* padding-left: 30px; */
+     font-size: 2em;
+     margin: 0 0 20px 0;
+}
+
+#contactForm{
+         /* font-family: 'Slabo 27px', 
+         /* serif; */
+         color: #485e74;
+}
+
+#contactForm > p:nth-of-type(2n+1){
+    padding-left: 0;
+}
+
+.company-info * {
+   
+    text-align: center;
+}
+
+p.full{
+    padding-left: 0;
+
+}
+
+
+
+
+
+
+
+
+/* FORM STYLES */
+
+.container{
+    max-width: 90%;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label {
+    display: block;
+   
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+    background: #79c879;
+    border: 0;
+    text-transform: uppercase;
+    color: #fff;
+    width: 30%;
+    
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #2FBF7C;
+    color: #fff;
+    font-weight: normal;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.full button{
+    font-family: 'Arimo',
+    sans-serif;
+    font-weight: bold;
+}
+
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+
+/* LARGE SCREENS */
+/*
+@media(min-width:700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper>* {
+        padding: 2em;
+    }
+    .company-info h3,
+    .company-info ul,
+    .brand {
+        text-align: left;
+    }
+}
+/* end of contact-form styles */ 
